@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Surprise 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="landing">
+    <h1 class="typing">Ek Tu Hi Yrr Mera... 💞</h1>
+    <button onclick="toggleMusic()" class="btn">🎵 Play / Pause Music</button>
+  </div>
+
+  <div class="gift-box" onclick="openGift()">
+    🎁
+  </div>
+
+  <section id="surprise" class="hidden">
+    <h2>Surprise for You 💖</h2>
+    <p>You are the most special person in my life 🌸</p>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="Photo 1">
+      <img src="images/photo2.jpg" alt="Photo 2">
+      <img src="images/photo3.jpg" alt="Photo 3">
+    </div>
+  </section>
+
+  <footer>
+    <p>✨ Made with 💖 by <b>Ali</b> ✨</p>
+  </footer>
+
+  <audio id="bg-music" loop>
+    <source src="music/tu-hi-yrr-mera.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
