@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Special Surprise 💖</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friendship Forever 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="landing">
-    <h1 class="typing">Ek Tu Hi Yrr Mera... 💞</h1>
-    <button onclick="toggleMusic()" class="btn">🎵 Play / Pause Music</button>
+<!-- Floating glowing hearts -->
+<div class="heart" style="--i:0;">💖</div>
+<div class="heart" style="--i:0.2;">💞</div>
+<div class="heart" style="--i:0.4;">❤️</div>
+<div class="heart" style="--i:0.6;">💖</div>
+<div class="heart" style="--i:0.8;">💞</div>
+
+<header>
+  <h1>🌸 My Best Friend Forever 🌸</h1>
+</header>
+
+<nav>
+  <a href="#" onclick="showTab('home')">Home</a>
+  <a href="#" onclick="showTab('notes')">Notes</a>
+  <a href="#" onclick="showTab('gallery')">Gallery</a>
+  <a href="#" onclick="showTab('memories')">Memories</a>
+  <a href="#" onclick="showTab('about')">About</a>
+  <a href="#" onclick="showTab('contact')">Contact</a>
+</nav>
+
+<section id="home" class="active">
+  <h2>Welcome 🌟</h2>
+  <p>This website is specially made to celebrate my friendship journey ❤️</p>
+  <img src="https://i.ibb.co/0p79kT3/your-image.jpg" alt="Best Friends" style="width:200px;border-radius:20px;">
+  <br>
+  <button class="music-control" onclick="toggleMusic()">🎵 Play / Pause Music</button>
+</section>
+
+<section id="notes">
+  <h2>📖 Friendship Notes</h2>
+  <p>"Friendship is not about who came first or who you’ve known the longest. It’s about who never left your side."</p>
+  <p>"True friends are never apart, maybe in distance but never in heart 💕"</p>
+</section>
+
+<section id="gallery">
+  <h2>📸 Memories Gallery</h2>
+  <div class="gallery">
+    <img src="https://i.ibb.co/0p79kT3/your-image.jpg" alt="Memory 1">
+    <img src="https://qu.ax/panuO.jpg" alt="Memory 2">
   </div>
+</section>
 
-  <div class="gift-box" onclick="openGift()">
-    🎁
-  </div>
+<section id="memories">
+  <h2>🌈 Sweet Memories</h2>
+  <p>Every moment spent together is a precious memory ✨</p>
+  <p>Thanks for being the most amazing friend in my life 🌹</p>
+</section>
 
-  <section id="surprise" class="hidden">
-    <h2>Surprise for You 💖</h2>
-    <p>You are the most special person in my life 🌸</p>
+<section id="about">
+  <h2>💌 About This Page</h2>
+  <p>This page is designed as a surprise gift to celebrate our friendship journey 💖</p>
+</section>
 
-    <!-- Gallery -->
-    <div class="gallery">
-      <img src="images/photo1.jpg" alt="Photo 1">
-      <img src="images/photo2.jpg" alt="Photo 2">
-      <img src="images/photo3.jpg" alt="Photo 3">
-    </div>
-  </section>
+<section id="contact">
+  <h2>📩 Contact Me</h2>
+  <p>Made with ❤️ by <strong>Ali</strong></p>
+</section>
 
-  <footer>
-    <p>✨ Made with 💖 by <b>Ali</b> ✨</p>
-  </footer>
+<footer>
+  <p>Made with ❤️ by <strong>Ali</strong></p>
+  <small>Music: "Ek Tu Hi Yrr Mera"</small>
+</footer>
 
-  <audio id="bg-music" loop>
-    <source src="music/tu-hi-yrr-mera.mp3" type="audio/mpeg">
-  </audio>
+<audio id="bg-music" autoplay loop>
+  <source src="https://pagalfree.com/musics/128-Ek%20Tu%20Hi%20Yaar%20Mera%20-%20Sonu%20Ke%20Titu%20Ki%20Sweety%20128%20Kbps.mp3" type="audio/mpeg">
+</audio>
 
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
